@@ -1,207 +1,220 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Divinity International Traders — Designer Kulhads | Value. Trust. Global.</title>
-  <meta name="description" content="Divinity International Traders — Supplier of designer kulhads and traditional kulhads in all varieties. Based in Thane, Maharashtra. Bulk orders welcome." />
-  <meta name="keywords" content="kulhad, designer kulhad, clay cups, earthenware, Divinity International Traders, Thane, India, import export" />
-  <link rel="icon" href="assets/favicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Divinity International Traders",
-    "url": ".",
-    "logo": "assets/favicon.png",
-    "telephone": "+918591802049",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Ganesh Nagar, Jija Mata Chawl, Church Road, Manpada",
-      "addressLocality": "Thane",
-      "addressRegion": "Maharashtra",
-      "postalCode": "",
-      "addressCountry": "IN"
-    },
-    "description": "Supplier of designer kulhads and earthenware. Value. Trust. Global."
-  }
-  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Divinity International Traders</title>
+  <meta name="description" content="Divinity International Traders — Sourcing, Trading & Kulhad Products Gallery">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#d4af37;--muted:#9aa4b2;--glass:rgba(255,255,255,0.03);--radius:14px;font-family:Inter, system-ui, -apple-system,'Segoe UI',Roboto,Arial}
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#071022);color:#e6eef8}
+    .wrap{max-width:1200px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand-text{font-weight:800;font-size:18px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    .nav-right{display:flex;gap:12px;align-items:center}
+    main{margin-top:20px}
+    .page{display:none}
+    .page.active{display:block}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    .hero{display:flex;gap:20px;align-items:center}
+    .hero .lead{font-size:26px;margin:0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+    .services .s{background:var(--glass);padding:14px;border-radius:10px}
+    /* Products */
+    .products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .product{background:rgba(2,8,18,0.6);padding:14px;border-radius:12px;text-align:center}
+    .product img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none}
+    .btn-primary{background:var(--accent);color:#071425}
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+    .gallery img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+    /* Contact */
+    form{display:grid;gap:10px}
+    input,textarea{background:#021022;border:1px solid #0b2030;padding:10px;border-radius:8px;color:#dfeeff}
+    button[type=submit]{background:var(--accent);color:#081425;border:none;padding:10px;border-radius:8px;font-weight:700}
+    footer{margin-top:24px;text-align:center;color:var(--muted)}
+
+    @media (max-width:900px){.services{grid-template-columns:1fr}.hero{flex-direction:column}}
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav container">
-      <a class="brand" href="#">
-        <img src="assets/logo.png" alt="Divinity International Traders" class="nav-logo" />
-      </a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a class="cta" href="https://wa.me/918591802049" target="_blank" rel="noopener">WhatsApp Us</a>
-    </nav>
-
-    <section class="hero container" id="home">
-      <div class="hero-left">
-        <h1>Divinity International Traders</h1>
-        <p class="tagline">Value. Trust. Global.</p>
-        <p class="lead">Premium designer <strong>kulhads</strong> — traditional earthenware & modern designer ranges. Bulk orders, export-ready packing, reliable delivery.</p>
-        <div class="hero-buttons">
-          <a class="btn primary" href="#products">Explore Products</a>
-          <a class="btn outline" href="mailto:info@divinitytraders.com">Send Inquiry</a>
-        </div>
-        <ul class="quick-info">
-          <li><strong>Location:</strong> Ganesh Nagar, Jija Mata Chawl, Church Road, Manpada, Thane, Maharashtra</li>
-          <li><strong>WhatsApp:</strong> <a href="https://wa.me/918591802049">+91 85918 02049</a></li>
-        </ul>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="brand-text">DIVINITY INTERNATIONAL TRADERS</div>
+        <div style="color:var(--muted);font-size:13px">Value • Trust • Global</div>
       </div>
-      <div class="hero-right">
-        <div class="hero-card">
-          <img src="assets/hero.jpg" alt="Designer Kulhads - Divinity International Traders" />
-        </div>
-      </div>
-    </section>
-  </header>
+      <nav class="nav-right">
+        <a href="#home" data-link>Home</a>
+        <a href="#products" data-link>Products</a>
+        <a href="#gallery" data-link>Gallery</a>
+        <a href="#contact" data-link>Contact</a>
+      </nav>
+    </header>
 
-  <main>
-    <section class="about container" id="about">
-      <h2>About Us</h2>
-      <div class="about-grid">
-        <div>
-          <p>Divinity International Traders is a trusted supplier of traditional and designer kulhads. Combining craftsmanship with modern design, we deliver diverse ranges suitable for retail, events, cafes & exporters. Our focus is quality packaging, timely dispatch, and building long-term relationships.</p>
-          <ul>
-            <li><strong>Mission:</strong> Deliver authentic earthenware with global standards.</li>
-            <li><strong>Vision:</strong> Be the preferred kulhad supplier for businesses worldwide.</li>
-            <li><strong>Values:</strong> Value • Trust • Global</li>
-          </ul>
-        </div>
-        <div>
-          <div class="stats">
-            <div><strong>100+</strong><span>Designs</span></div>
-            <div><strong>5000+</strong><span>Units / month capacity</span></div>
-            <div><strong>Export Ready</strong><span>Packing & documentation</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <main>
+      <!-- Home / Front page with gallery preview and kulhad types -->
+      <section id="home" class="page active">
+        <div class="card hero">
+          <div style="flex:1">
+            <p class="lead">Welcome to Divinity International Traders</p>
+            <p style="color:var(--muted);margin-top:6px">We supply quality kulhads and packaging solutions to buyers worldwide. Browse our products, view the gallery and contact us for bulk enquiries.</p>
 
-    <section class="products container" id="products">
-      <h2>Our Products</h2>
-      <p class="sub">Designer kulhads & earthenware — single units to bulk shipments.</p>
-
-      <div class="product-grid">
-        <article class="product-card">
-          <img src="assets/product1.jpg" alt="Designer Kulhad 1" />
-          <h3>Designer Kulhad — Ribbed</h3>
-          <p>Traditional ribbed design — ideal for cafes & events. Available plain or glazed.</p>
-          <div class="product-meta">
-            <span>MOQ: 500 pcs</span>
-            <a href="mailto:info@divinitytraders.com?subject=Inquiry%20-%20Designer%20Kulhad%20Ribbed">Inquire</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/product2.jpg" alt="Designer Kulhad 2" />
-          <h3>Classic Kulhad</h3>
-          <p>Simple classic shape for tea and traditional servings.</p>
-          <div class="product-meta">
-            <span>MOQ: 500 pcs</span>
-            <a href="mailto:info@divinitytraders.com?subject=Inquiry%20-%20Classic%20Kulhad">Inquire</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/product3.jpg" alt="Designer Kulhad 3" />
-          <h3>Custom Sets & Packs</h3>
-          <p>Gift sets and branded packs for corporate gifting or retail.</p>
-          <div class="product-meta">
-            <span>MOQ: 300 sets</span>
-            <a href="mailto:info@divinitytraders.com?subject=Inquiry%20-%20Custom%20Sets">Inquire</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/product4.jpg" alt="Designer Kulhad 4" />
-          <h3>Glazed Options</h3>
-          <p>Food-safe glazed variants for liquid retention and easy cleaning.</p>
-          <div class="product-meta">
-            <span>MOQ: 1000 pcs</span>
-            <a href="mailto:info@divinitytraders.com?subject=Inquiry%20-%20Glazed%20Kulhad">Inquire</a>
-          </div>
-        </article>
-      </div>
-
-      <p class="bulk-note">Need a custom design or bulk quote? <a href="https://wa.me/918591802049">Message on WhatsApp</a> or mail us.</p>
-    </section>
-
-    <section class="gallery container" id="gallery">
-      <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <img src="assets/gallery1.jpg" alt="kulhad display 1" />
-        <img src="assets/gallery2.jpg" alt="kulhad display 2" />
-        <img src="assets/gallery3.jpg" alt="packaging" />
-        <img src="assets/gallery4.jpg" alt="factory photo" />
-      </div>
-    </section>
-
-    <section class="contact container" id="contact">
-      <h2>Contact Us</h2>
-      <div class="contact-grid">
-        <div>
-          <h3>Get in touch</h3>
-          <p><strong>Address:</strong><br> Ganesh Nagar, Jija Mata Chawl, Church Road, Manpada, Thane, Maharashtra</p>
-          <p><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/918591802049">+91 85918 02049</a></p>
-          <p><strong>Email:</strong> <a href="mailto:info@divinitytraders.com">info@divinitytraders.com</a></p>
-
-          <div class="map-wrap">
-            <iframe
-              title="Divinity International Traders - Map"
-              src="https://www.google.com/maps?q=Ganesh+Nagar+Jija+Mata+Chawl+Church+Road+Manpada+Thane+Maharashtra&output=embed"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-
-          <p class="small">Business hours: Mon–Sat 9:00 AM – 6:00 PM</p>
-        </div>
-
-        <div>
-          <h3>Send an inquiry</h3>
-          <form id="contactForm">
-            <label for="name">Your Name</label>
-            <input id="name" name="name" required placeholder="Your name" />
-
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" required placeholder="you@example.com" />
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell us about your requirement..."></textarea>
-
-            <div class="form-actions">
-              <button type="submit" class="btn primary">Send Mail</button>
-              <a class="btn outline" href="https://wa.me/918591802049">Message on WhatsApp</a>
+            <div class="services" style="margin-top:16px">
+              <div class="s"><strong>Export-ready Kulhads</strong><div style="color:var(--muted);font-size:13px">Eco-friendly, stackable and custom-printed options.</div></div>
+              <div class="s"><strong>Custom Branding</strong><div style="color:var(--muted);font-size:13px">Logo printing & packaging for your brand.</div></div>
+              <div class="s"><strong>Global Logistics</strong><div style="color:var(--muted);font-size:13px">Consolidation, clearance & door delivery.</div></div>
             </div>
-            <p class="form-note">Note: The form opens your email client to send an email (no backend required).</p>
-          </form>
+
+            <div style="margin-top:16px">
+              <a class="btn btn-primary" href="#products" data-link>See Products</a>
+              <a class="btn" style="margin-left:8px;border:1px solid #243142;color:var(--muted)" href="#contact" data-link>Get Quote</a>
+            </div>
+          </div>
+
+          <aside style="width:360px">
+            <div class="card">
+              <h4 style="margin:0">Kulhad Types (Quick)</h4>
+              <ul style="color:var(--muted);margin-top:10px">
+                <li><strong>Plain Earthen Kulhad</strong> — Traditional unglazed clay cup.</li>
+                <li><strong>Glazed Kulhad</strong> — Food-safe glazed finish, colourful options.</li>
+                <li><strong>Printed Kulhad</strong> — Brand/logo printing on the outer surface.</li>
+                <li><strong>Eco-friendly Compressed Kulhad</strong> — Lighter, durable, recyclable.</li>
+                <li><strong>Small/Mini Kulhad</strong> — For samplers and events.</li>
+                <li><strong>Custom Shapes</strong> — Handle, rim or embossed designs possible.</li>
+              </ul>
+            </div>
+
+            <div style="margin-top:12px;text-align:center;color:var(--muted)">Phone: +91 98765 43210<br>Email: contact@divinitytraders.example</div>
+          </aside>
         </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <strong>Divinity International Traders</strong>
-        <p>Ganesh Nagar, Manpada, Thane • +91 85918 02049</p>
-      </div>
-      <div>
-        <p>© <span id="yr"></span> Divinity International Traders. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+        <div style="margin-top:18px">
+          <div class="card">
+            <h3 style="margin-top:0">Gallery Preview</h3>
+            <div class="gallery" id="gallery-preview">
+              <!-- Replace with real images. -->
+              <div style="background:#061223;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:140px;color:var(--muted);">Image 1 (replace)</div>
+              <div style="background:#061223;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:140px;color:var(--muted);">Image 2 (replace)</div>
+              <div style="background:#061223;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:140px;color:var(--muted);">Image 3 (replace)</div>
+              <div style="background:#061223;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:140px;color:var(--muted);">Image 4 (replace)</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <script src="scripts.js"></script>
+      <!-- Products Page -->
+      <section id="products" class="page">
+        <div class="card">
+          <h2 style="margin-top:0">Our Products — Kulhads & Accessories</h2>
+          <p style="color:var(--muted)">Below is a sample catalogue. Replace images and details with your SKUs, MOQ and prices.</p>
+
+          <div class="products-grid" id="products-grid">
+            <!-- Product 1 -->
+            <div class="product">
+              <img src="placeholder_kulhad_plain.jpg" alt="Plain Kulhad">
+              <h4>Plain Earthen Kulhad</h4>
+              <div style="color:var(--muted);font-size:13px">Traditional hand-moulded clay cup. MOQ: 1000 pcs</div>
+              <div style="margin-top:8px"><a class="btn" href="#contact" data-link>Enquire</a></div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product">
+              <img src="placeholder_kulhad_glazed.jpg" alt="Glazed Kulhad">
+              <h4>Glazed Kulhad</h4>
+              <div style="color:var(--muted);font-size:13px">Food-safe glossy finish. MOQ: 2000 pcs</div>
+              <div style="margin-top:8px"><a class="btn" href="#contact" data-link>Enquire</a></div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product">
+              <img src="placeholder_kulhad_printed.jpg" alt="Printed Kulhad">
+              <h4>Printed Kulhad</h4>
+              <div style="color:var(--muted);font-size:13px">Custom logo printing available. MOQ: 3000 pcs</div>
+              <div style="margin-top:8px"><a class="btn" href="#contact" data-link>Enquire</a></div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product">
+              <img src="placeholder_kulhad_mini.jpg" alt="Mini Kulhad">
+              <h4>Mini / Sampler Kulhad</h4>
+              <div style="color:var(--muted);font-size:13px">Perfect for samples and events. MOQ: 2000 pcs</div>
+              <div style="margin-top:8px"><a class="btn" href="#contact" data-link>Enquire</a></div>
+            </div>
+          </div>
+
+          <div style="margin-top:14px;color:var(--muted)">Note: Update each product card with actual images (e.g., <code>products/kulhad_plain.jpg</code>) and your pricing/MOQ.</div>
+        </div>
+      </section>
+
+      <!-- Gallery Page -->
+      <section id="gallery" class="page">
+        <div class="card">
+          <h2 style="margin-top:0">Gallery — Kulhad Collection</h2>
+          <p style="color:var(--muted)">Click to enlarge. Replace placeholder images with your actual product photos.</p>
+          <div class="gallery" id="full-gallery">
+            <div style="background:#061223;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:140px;color:var(--muted);">Gallery Image 1 (replace)</div>
+            <div style="background:#061223;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:140px;color:var(--muted);">Gallery Image 2 (replace)</div>
+            <div style="background:#061223;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:140px;color:var(--muted);">Gallery Image 3 (replace)</div>
+            <div style="background:#061223;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:140px;color:var(--muted);">Gallery Image 4 (replace)</div>
+            <div style="background:#061223;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:140px;color:var(--muted);">Gallery Image 5 (replace)</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Page -->
+      <section id="contact" class="page">
+        <div class="card">
+          <h2 style="margin-top:0">Contact Us</h2>
+          <p style="color:var(--muted)">Send your requirement or request a sample quote. We'll reply within 24 hours.</p>
+          <form onsubmit="handleContact(event)">
+            <input type="text" id="c-name" placeholder="Your name" required>
+            <input type="email" id="c-email" placeholder="Email" required>
+            <input type="text" id="c-subject" placeholder="Subject" required>
+            <textarea id="c-message" rows="6" placeholder="Tell us about your requirement" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+
+          <div style="margin-top:12px;color:var(--muted)"><strong>Phone:</strong> +91 98765 43210<br><strong>Email:</strong> contact@divinitytraders.example</div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="color:var(--muted)">© <span id="year"></span> Divinity International Traders — All rights reserved.</div>
+    </footer>
+  </div>
+
+  <script>
+    // Simple hash-based navigation
+    function showPage(id){
+      document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+      const el = document.getElementById(id);
+      if(el) el.classList.add('active');
+      window.scrollTo(0,0);
+    }
+    function handleHash(){
+      const hash = (location.hash || '#home').replace('#','');
+      showPage(hash || 'home');
+    }
+    window.addEventListener('hashchange', handleHash);
+    document.querySelectorAll('[data-link]').forEach(a=>a.addEventListener('click',function(e){
+      // allow normal anchor behaviour — hash will change and showPage will run
+    }));
+    handleHash();
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleContact(e){
+      e.preventDefault();
+      // Replace this with real integration (Formspree / Netlify / email API)
+      alert('Thank you! Your enquiry has been received. We will contact you soon.');
+      e.target.reset();
+    }
+
+    // If you want, replace placeholder images programmatically. For now, just use filesystem images.
+  </script>
 </body>
 </html>
